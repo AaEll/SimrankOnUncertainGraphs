@@ -72,7 +72,7 @@ class HashTable{
 	}
 	
 	public void plus(int key, float value){
-		int _key_ = hash(key)% tableSize;
+		int _key_ = hash(key)%tableSize;
 		if (value == 0.0f){
 			;
 		}
@@ -174,7 +174,7 @@ class HashTable{
 	}
 		
 	private static int hash(int key){
-		return key; //apply some function if problems arise
+		return (900000*key)%999983; 
 	}
 
 }
